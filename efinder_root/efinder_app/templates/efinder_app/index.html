@@ -1,27 +1,7 @@
 {% extends 'base.html' %}
 {% block head %}
 
-<style>
-	input[type=text] {
-	    width: 600px;
-	    box-sizing: border-box;
-	    border: 2px solid #ccc;
-	    border-radius: 4px;
-	    font-size: 16px;
-	    background-color: white;
-	    background-image: url('searchicon.png');
-	    background-position: 10px 10px; 
-	    background-repeat: no-repeat;
-	    padding: 12px 20px 12px 40px;
-	    -webkit-transition: width 0.4s ease-in-out;
-	    transition: width 0.4s ease-in-out;
-	}
 
-	input[type=text]:focus {
-	    width: 100%;
-	}
-
-</style>
 {% endblock %}
 
 
@@ -32,7 +12,6 @@
     <div class="transbox col-sm-offset-2 col-sm-8 text-left"> 
     	<form>
   			<div class="input-group">
-  				<h1>{{ title }}</h1>
     			<input type="text" class="form-control" placeholder="Keyword Search">
     			<div class="input-group-btn">
       				<button class="btn btn-default" type="submit">

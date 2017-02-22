@@ -16,10 +16,10 @@ Including another URLconf
 from django.conf.urls import include, url
 from django.contrib import admin
 
-from efinder_app.views import HomeView
+from efinder_app.views import SearchView
 
 urlpatterns = [
     url(r'^', include('efinder_app.urls')), #match any random, not per django tutorial r'^efinder_app'
     url(r'^admin/', admin.site.urls),
-    url(r'^view-1/',HomeView.as_view()), #$ sigs end of pattern
+    url(r'^view-1/',SearchView.as_view()), #$ sigs end of pattern
 ]

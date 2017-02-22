@@ -5,10 +5,26 @@ from django.views import View
 def index(request):
     return HttpResponse("Hello, world. You're at the polls index.")
 
-class HomeView(View):
+class SearchView(View):
 
 	def get(self, request, *args, **kwargs):
 		
 		template = "efinder_app/index.html"
 		
 		return render(request, template)
+
+
+# class UserView(View):
+
+# def user_auth(request):
+# 	if request.user.is_authenticated():
+# 		context = {
+
+# 		}
+# 		template = 
+# 	else:
+# 		context = {
+
+# 		}
+# 		template = 
+# 	return render(request, context)
