@@ -1,3 +1,6 @@
 from django.contrib import admin
 
-# Register your models here.
+#relative import-admin and models are in the same app
+from .models import Event 
+
+admin.site.register(Event)
