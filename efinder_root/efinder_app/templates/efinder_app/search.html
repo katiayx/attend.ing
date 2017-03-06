@@ -11,7 +11,8 @@
 	<div class="row content">
 		<div class="transbox col-sm-offset-2 col-sm-8 text-left">
 			<h1>Fill your day!</h1>
-				<form>
+				<form action='' method="POST">
+					{% csrf_token %}
 					<input id="keyword_search" type="text" class="form-control" required></input>
 					<button id="keyword_search-button" class="btn" type="submit" value="Find your event!">Find your event!</button>
 				</form>
