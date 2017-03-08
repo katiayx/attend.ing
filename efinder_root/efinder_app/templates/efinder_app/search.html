@@ -9,12 +9,22 @@
 
 <div class="container-fluid text-center">
 	<div class="row content">
-		<div class="transbox col-sm-offset-2 col-sm-8 text-left">
-			<h1>Fill your day!</h1>
+		<!-- <div class="transbox col-sm-offset-2 col-sm-8 text-left"> -->
+			<h3 align="center">Looking for something to do?</h3>
 				<form action='' method="POST">
 					{% csrf_token %}
-					<input id="keyword_search" type="text" class="form-control" required></input>
-					<button id="keyword_search-button" class="btn" type="submit" value="Find your event!">Find your event!</button>
+					<div class="col-sm-4">
+						<label for='keywords'><input id="keyword_search" type="text" class="form-control" placeholder="search event"required></input></label>
+					</div>
+					<div class="col-sm-4">
+						<label for='location'><input id="location" type="address" class="form-control" placeholder="location" required></input></label>
+					</div>
+					<div class="col-sm-4">
+						<label for='date'><input id="date" type="date" class="form-control" placeholder="date"></input></label>
+					</div>
+					<div class="col-sm-12">
+						<button id="keyword_search-button" class="btn" type="submit" value="Find your event!">Find your event!</button>
+					</div>
 				</form>
 		</div>
 	</div>
